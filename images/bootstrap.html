@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <style>
+        .dark {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3  col-md-6 bg-danger">Column1</div>
+            <div class="col-lg-3  col-md-6 bg-warning">Column2</div>
+            <div class="col-lg-3  col-md-6 bg-success">Column3</div>
+            <div class="col-lg-3  col-md-6 bg-info">Column4</div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-lg-6 border-end border-danger ">
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur excepturi laudantium, facere velit ratione non mollitia sunt libero veritatis, consectetur laborum sit? Fugit, ut autem! Velit magni numquam et aperiam, sit totam esse
+                    eos cupiditate cumque dicta quia unde porro saepe possimus consequuntur impedit commodi. Quasi magnam, unde laborum architecto quod earum cupiditate blanditiis facilis, voluptate at perspiciatis ipsum ut, in quos mollitia voluptas
+                    molestiae cumque minima deserunt sed quia dicta? Voluptate alias velit facere doloribus, eius deserunt aliquid dolorum, laborum, repellendus porro ipsam? Sunt natus illum, nam quibusdam architecto aperiam id ab perferendis harum iure
+                    veritatis dicta, officiis perspiciatis. ipsum dolor sit amet consectetur adipisicing elit. Dignissimos totam repellat nobis cupiditate et? Nemo nesciunt sint ullam cum excepturi autem minus quos tempora at doloribus modi, corporis
+                    tempore odio obcaecati vitae nostrum enim atque fugiat temporibus repudiandae qui dolorum quaerat error maxime? Iste modi maiores odio libero assumenda repellat error aspernatur perspiciatis id adipisci ducimus iusto, nam necessitatibus
+                    fugit ad ipsum placeat omnis delectus voluptatibus. Voluptate aspernatur laboriosam nesciunt. ipsum dolor sit amet consectetur, adipisicing elit. Atque, dolores corrupti. Sint sed incidunt culpa tenetur, explicabo accusamus dolor perferendis,
+                    quos error, distinctio corrupti quibusdam quaerat aut nam eaque ipsam omnis odio. Totam placeat, dolor voluptate officia repellendus saepe, magnam officiis ad nesciunt deleniti similique perspiciatis alias quidem quibusdam reiciendis.
+                    ipsum dolor sit, amet consectetur adipisicing elit. Veniam voluptas facere ducimus velit necessitatibus ut illo. Dolores pariatur velit magnam ipsum? Perferendis aliquid doloremque minima. Fugiat voluptatem nam dignissimos repellendus.</p>
+
+            </div>
+
+            <div class="col-lg-6 ">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quisquam laborum nobis modi ut accusantium id? Esse quaerat, maiores quasi, nesciunt atque eum consectetur cupiditate dicta repellendus reiciendis pariatur odio nemo culpa distinctio nisi suscipit.
+                    Totam sunt sit, velit delectus in unde explicabo maxime sequi. Voluptate ea, repellendus, architecto repudiandae quam, aliquam in ut consequuntur magni laudantium culpa adipisci nulla fuga? Tempore ducimus ullam nam soluta eligendi
+                    quidem natus? Ipsa blanditiis itaque eius vero! Saepe, et! Voluptates veritatis tempora, itaque porro, illo et dignissimos voluptas soluta ea architecto eos perferendis consequatur magni quam aperiam optio. Sed, provident. Obcaecati,
+                    saepe esse?
+                </p>
+            </div>
+        </div>
+
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="Dark">
+            <label for="Dark" class="custom-control-label">Dark Mode</label>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+    <script>
+        let input = document.querySelector("input")
+        let body = document.querySelector("body")
+
+        input.addEventListener("click", () => {
+            body.classList.toggle("dark")
+        })
+    </script>
+</body>
+
+</html>

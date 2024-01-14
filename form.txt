@@ -1,0 +1,4 @@
+            <button class="bg-[#008080] cursor-pointer text-xl py-2 px-6 rounded text-white  mx-4">Check out</button>
+
+
+            absolute top-[15%] md:right-[3%] right-0 mx-4 md:left-[40%] left-0  p-5 hidden duration-300 transition-all ease-in

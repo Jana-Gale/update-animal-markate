@@ -1,0 +1,482 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- //tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="SRTYLE.CSS">
+
+    <!-- add icons -->
+    <!-- add icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title> ANIMAL MARKETS</title>
+
+
+    <style>
+        video {
+            width: auto;
+        }
+    </style>
+</head>
+
+<body class="bg-[#f5f5f5] font-[Poppins]">
+    <nav class="bg-[#008080] p-6 shadow md:flex md:items-center md:justify-between relative">
+        <div class="flex items-center justify-between">
+
+            <span class="text-xl font-[poppins] text-white mx-2 cursor-pointer">
+                <img class="h-14 inline" src="./images/cow.png" alt="">
+                ANIMAL MARKETS</span>
+
+            <!-- aadd icon  -->
+            <span class="text-3xl text-white md:hidden block mx-2 cursor-pointer">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+
+
+        <ul class="md:flex md:items-center z-[2] md:z-auto md:static absolute bg-[#008080]
+         left-0 w-full md:w-auto md:py-0 py-6 md:pl-0 pl-7 top-[-400px] duration-500 transition-all ease-in text-center">
+
+
+
+
+            <li class="mx-8 md:my-0 my-6"><a href="index.html" class="text-white text-xl font-[poppins] hover:text-gray-200 duration-500">HOME</a></li>
+            <li class="mx-8 md:my-0 my-6"><a href="./about.html" class="text-white text-xl font-[poppins] hover:text-gray-200 duration-500">ABOUT</a></li>
+            <li class="mx-8 md:my-0 my-6"><a href="#" id="header" class="text-white text-xl font-[poppins] hover:text-gray-200 duration-500">SERVICES</a></li>
+            <li class="mx-8 md:my-0 my-6"><a href="contact.html" class="text-white text-xl font-[poppins] hover:text-gray-200 duration-500">CONTACT</a></li>
+
+            <!-- //loging button -->
+            <!-- <button class=" mx-8 font-sans  text-cyan-800 bg-white px-6 py-2 rounded-full hover:bg-gray-600 hover:text-white duration-500">Sign Up</button> -->
+
+            <div id="cart-btn" class="bg-white w-14 h-14 text-center rounded-full text-[#008080] md:mx-2 flex justify-center m-auto  items-center cursor-pointer">
+                <ion-icon name="cart-outline" class="text-3xl mr-1"></ion-icon>
+                <span id="counter_cart" class="text-black text-2xl font-sans">0</span>
+            </div>
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+    <!-- //header section -->
+
+    <header class="w-auto h-screen">
+
+        <video autoplay loop muted plays-inline class=" md:h-[100vh] w-full">
+            <source src="./images/vedio animation.mp4">
+        </video>
+
+
+
+    </header>
+
+    <!-- //producting parchases -->
+
+    <div id="cart_itames" class="md:w-[800px]  bg-white shadow-md rounded-xl z-1  absolute  top-[15%] md:right-[3%] right-0 mx-4 md:left-[40%] left-0  p-5 hidden duration-300 transition-all ease-in">
+
+        <!-- //products -->
+        <!-- <div id="cart_item" class="flex items-center justify-around border-b-2 border-[#008080] pb-4 mb-4">
+            <input type="hidden" name="" id="id_input" value="1">
+            <img src="./images/donkeypng.png" alt="" class="h-20 w-20">
+            <h4 class="text-xl">Goat</h4>
+            <a href="#" id="small_btn_minus" class="bg-[#008080] text-white py-2 px-4 rounded cursor-pointer  ">&minus;</a>
+            <h4 class="text-xl">1</h4>
+            <a href="#" id="small_btn_plus" class="bg-[#008080] text-white py-2 px-4 rounded cursor-pointer">&plus;</a>
+            <span class="text-xl">65.7</span>
+            <a href="#" id="small_btn_times" class="bg-[#ff1212] text-white py-2 px-4 rounded cursor-pointer font-semibold">&times;</a>
+        </div> -->
+
+
+        <!-- //products 2 -->
+
+        <!-- //Check button -->
+        <div id="check_btn" class="flex justify-center items-center">
+            <h4 class="text-xl mx-2 font-sans">The Amount is: $</h4>
+            <h4 id="Total_price" class="text-xl font-sans">00</h4>
+            <button class="bg-[#008080] cursor-pointer text-xl py-2 px-6 rounded text-white  mx-4">Check out</button>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- //main center -->
+
+    <main class="bg-[#efefef] py-10 px-10 my-10 shadow-md">
+        <div class="my-16">
+            <h1 class="text-center text-3xl font-[poppins] font-bold ">OUR SERVICES</h1>
+            <hr class="w-[20%] h-2 bg-white shadow-md m-auto ">
+        </div>
+
+
+        <!-- Products list -->
+        <div id="all_products" class="md:grid md:grid-cols-3 md:gap-4 md:space-y-0 space-y-4 ">
+            <!-- Products list 1 -->
+            <div id="Products list" class="w-[380px] h-[380px] shadow-md rounded-xl  bg-[#fff] px-4">
+                <div class="bg-green-400 h-[200px] w-auto mb-2 ">
+                    <img class="w-44 m-auto py-5" src="./images/c1.png" alt="">
+                </div>
+                <div class="my-4">
+                    <h3 class="text-[#008080] text-xl my-2 cursor-pointer">Buy <span class="underline">Our</span> Products </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea sequi quos porro culpa velit at, praesentium modi tenetur ullam illo.</p>
+                </div>
+
+            </div>
+            <!-- Products list 2-->
+            <div id="Products list" class="w-[380px] h-[380px] shadow-md rounded-xl  bg-[#fff] px-4">
+                <div class="bg-orange-300 h-[200px] w-auto mb-2 ">
+                    <img class="w-32 m-auto py-2" src="./images/donkeypng.png" alt="">
+                </div>
+                <div class="my-4">
+                    <h3 class="text-[#008080] text-xl my-2 cursor-pointer">Buy <span class="underline">Our</span> Products </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea sequi quos porro culpa velit at, praesentium modi tenetur ullam illo.</p>
+                </div>
+
+            </div>
+            <!-- Products list 3-->
+            <div id="Products list" class="w-[380px] h-[380px] shadow-md rounded-xl  bg-[#fff] px-4">
+                <div class="bg-blue-500 h-[200px] w-auto mb-2 ">
+                    <img class="w-44 m-auto py-5" src="./images/g1.png" alt="">
+                </div>
+                <div class="my-4">
+                    <h3 class="text-[#008080] text-xl my-2 cursor-pointer">Buy <span class="underline">Our</span> Products </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea sequi quos porro culpa velit at, praesentium modi tenetur ullam illo.</p>
+                </div>
+
+            </div>
+            <!-- Products list 4-->
+            <div id="Products list" class="w-[380px] h-[380px] shadow-md rounded-xl  bg-[#fff] px-4">
+                <div class="bg-sky-500 h-[200px] w-auto mb-2 ">
+                    <img class="w-44 m-auto py-5" src="./images/g2.png" alt="">
+                </div>
+                <div class="my-4">
+                    <h3 class="text-[#008080] text-xl my-2 cursor-pointer">Buy <span class="underline">Our</span> Products </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea sequi quos porro culpa velit at, praesentium modi tenetur ullam illo.</p>
+                </div>
+
+            </div>
+            <!-- Products list 5-->
+            <div id="Products list" class="w-[380px] h-[380px] shadow-md rounded-xl  bg-[#fff] px-4">
+                <div class="bg-gray-700 h-[200px] w-auto mb-2 ">
+                    <img class="w-52 m-auto py-5" src="./images/h2.png" alt="">
+                </div>
+                <div class="my-4">
+                    <h3 class="text-[#008080] text-xl my-2 cursor-pointer">Buy <span class="underline">Our</span> Products </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea sequi quos porro culpa velit at, praesentium modi tenetur ullam illo.</p>
+                </div>
+
+            </div>
+            <!-- Products list 6-->
+            <div id="Products list" class="w-[380px] h-[380px] shadow-md rounded-xl  bg-[#fff] px-4">
+                <div class="bg-[#008080] h-[200px] w-auto mb-2 ">
+                    <img class="w-44 m-auto py-5" src="./images/h1.png" alt="">
+                </div>
+                <div class="my-4">
+                    <h3 class="text-[#008080] text-xl my-2 cursor-pointer">Buy <span class="underline">Our</span> Products </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea sequi quos porro culpa velit at, praesentium modi tenetur ullam illo.</p>
+                </div>
+
+            </div>
+            <!-- Products list 2-->
+
+
+        </div>
+
+
+        <!-- //comments our customers -->
+        <div class=" py-20">
+
+            <div class="my-16">
+                <h1 class="text-center text-[#008080] text-3xl font-[poppins] font-bold  uppercase">What Said for Our Customers</h1>
+                <hr class="w-[30%] h-2 bg-white shadow-md m-auto ">
+            </div>
+
+            <!-- //all comments -->
+            <div class="comments w-full  md:grid md:grid-cols-3 md:gap-4 md:space-y-0 space-y-4">
+                <!-- //comment 1 -->
+                <div class="coment1 w-[100%] h-[300px] bg-white shadow-xl rounded-xl p-4">
+                    <div id="header-comment" class="flex items-center space-x-4  ">
+
+                        <div class="firt-comnt bg-red-400 w-[100px] h-[100px] rounded-full border-2 border-black border-solid  bg-[url('./images/my-pg.jfif')] bg-cover"> </div>
+                        <h2 class="text-xl font-[poppins] md:flex-1">Mr:Jana-Gale </h2>
+                        <!-- <p class=" font-[poppins]">He is a Business Man</p> -->
+
+                        <p class="text-orange-500 ">⭐⭐⭐⭐⭐</p>
+
+                    </div>
+
+                    <div id="rexts" class="my-4 text-left leading-normal">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam soluta optio fugit possimus praesentium accusamus asperiores minus nisi excepturi. ipsum dolor sit amet consectetur, adipisicing elit. Sit eligendi asperiores
+                            dolores amet, minima non!</p>
+                    </div>
+
+                </div>
+
+
+                <!-- /// -->
+                <!-- //comment 2 -->
+                <div class="coment1 w-[100%] h-[300px] bg-white shadow-xl rounded-xl p-4">
+                    <div id="header-comment" class="flex items-center space-x-4  ">
+
+                        <div class="firt-comnt bg-red-400 w-[100px] h-[100px] rounded-full border-2 border-orange-400 border-solid  bg-[url('./images/suuud.png')] bg-cover"> </div>
+                        <h2 class="text-xl font-[poppins] md:flex-1">Mr:Jana-Gale </h2>
+
+
+                        <!-- <p class=" font-[poppins]">He is a Business Man</p> -->
+
+                        <p class="text-orange-500 ">⭐⭐⭐⭐⭐</p>
+
+                    </div>
+
+                    <div id="rexts" class="my-4 text-left leading-normal">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam soluta optio fugit possimus praesentium accusamus asperiores minus nisi excepturi. ipsum dolor sit amet consectetur, adipisicing elit. Sit eligendi asperiores
+                            dolores amet, minima non!</p>
+                    </div>
+
+                </div>
+
+                <!-- comment 3// -->
+                <!-- //comment 1 -->
+                <div class="coment1 w-[100%] h-[300px] bg-white shadow-xl rounded-xl p-4">
+                    <div id="header-comment" class="flex items-center space-x-4  ">
+
+                        <div class="firt-comnt bg-red-400 w-[100px] h-[100px] rounded-full border-2 border-black border-solid  bg-[url('./images/najka.jfif')] bg-cover "> </div>
+                        <h2 class="text-xl font-[poppins] md:flex-1">Mr:Jana-Gale </h2>
+
+
+
+
+                        <!-- <p class=" font-[poppins]">He is a Business Man</p> -->
+
+                        <p class="text-orange-500 ">⭐⭐⭐⭐⭐</p>
+
+                    </div>
+
+                    <div id="rexts" class="my-4 text-left leading-normal">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam soluta optio fugit possimus praesentium accusamus asperiores minus nisi excepturi. ipsum dolor sit amet consectetur, adipisicing elit. Sit eligendi asperiores
+                            dolores amet, minima non!</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+
+    <!-- //part 2 main -->
+    <section class="w-full bg-white min-h-full py-8 px-10 my-[50px]">
+        <div class="my-16">
+            <h1 id="H1-PRODUCT" class="text-center text-3xl font-bold ">BUY OUR LAST PRODUTS</h1>
+            <hr class="w-[20%] h-2 bg-white shadow-md m-auto ">
+        </div>
+        <!-- products -->
+        <div class="products md:grid grid-cols-3 gap-4 space-y-4 items-center">
+
+            <!-- //products 1 -->
+            <div class="item bg-white drop-shadow-xl py-4 px-4 w-[400px] h-[400px] rounded-lg">
+                <input type="hidden" name="" id="product_id" value="1">
+                <div class="bg-gray-300 w-auto h-[250px] rounded-md mb-4">
+                    <img class="w-full h-full" src="./images/goat.jpg" id="image">
+
+                </div>
+                <h4 class="text-2xl mt-2" id="product_name">GOAT</h4>
+                <span class="text-gray-500 text-xs">BUY NOW & GET NOW</span>
+
+                <div class="flex justify-between items-center px-2 py-4">
+                    <h4 class="text-2xl font-bold text-[#008080]" id="price">$200</h4>
+                    <ion-icon id="Buy_btn" name="cart-outline" class="bg-[#008080] hover:bg-green-600 transition-all ease-in duration-500 py-2 px-4 rounded-md text-3xl text-white cursor-pointer"></ion-icon>
+                </div>
+
+            </div>
+            <!-- //product 2 -->
+            <div class="item bg-white drop-shadow-xl py-4 px-4 w-[400px] h-[400px] rounded-lg">
+                <input type="hidden" name="" id="product_id" value="2">
+                <div class="bg-gray-300 w-auto h-[250px] rounded-md mb-4">
+                    <img class="w-full h-full" src="./images/horse.jpeg" id="image">
+
+                </div>
+                <h4 class="text-2xl mt-2" id="product_name">Horse</h4>
+                <span class="text-gray-500 text-xs">BUY NOW & GET NOW</span>
+
+                <div class="flex justify-between items-center px-2 py-4">
+                    <h4 class="text-2xl font-bold text-[#008080]" id="price">$300</h4>
+                    <ion-icon id="Buy_btn" name="cart-outline" class="bg-[#008080] hover:bg-green-600 transition-all ease-in duration-500 py-2 px-4 rounded-md text-3xl text-white cursor-pointer"></ion-icon>
+                </div>
+
+            </div>
+
+            <!-- //product 3 -->
+            <div class="item bg-white drop-shadow-xl py-4 px-4 w-[400px] h-[400px] rounded-lg">
+                <input type="hidden" name="" id="product_id" value="3">
+                <div class="bg-gray-300 w-auto h-[250px] rounded-md mb-4">
+                    <img class="w-full h-full" src="./images/camel.jpg" id="image">
+
+                </div>
+                <h4 class="text-2xl mt-2" id="product_name">Camel</h4>
+                <span class="text-gray-500 text-xs">BUY NOW & GET NOW</span>
+
+                <div class="flex justify-between items-center px-2 py-4">
+                    <h4 class="text-2xl font-bold text-[#008080]" id="price">$100</h4>
+                    <ion-icon id="Buy_btn" name="cart-outline" class="bg-[#008080] hover:bg-green-600 transition-all ease-in duration-500 py-2 px-4 rounded-md text-3xl text-white cursor-pointer"></ion-icon>
+                </div>
+
+            </div>
+
+
+            <!-- //product 4 -->
+
+            <div class="item bg-white drop-shadow-xl py-4 px-4 w-[400px] h-[400px] rounded-lg">
+                <input type="hidden" name="" id="product_id" value="4">
+                <div class="bg-gray-300 w-auto h-[250px] rounded-md mb-4">
+                    <img class="w-full h-full" src="./images/donkey.jpeg" id="image">
+
+                </div>
+                <h4 class="text-2xl mt-2" id="product_name">Donkey</h4>
+                <span class="text-gray-500 text-xs">BUY NOW & GET NOW</span>
+
+                <div class="flex justify-between items-center px-2 py-4">
+                    <h4 class="text-2xl font-bold text-[#008080]" id="price">$250</h4>
+                    <ion-icon id="Buy_btn" name="cart-outline" class="bg-[#008080] hover:bg-green-600 transition-all ease-in duration-500 py-2 px-4 rounded-md text-3xl text-white cursor-pointer"></ion-icon>
+                </div>
+
+            </div>
+
+
+
+            <!-- //product 5 -->
+
+            <div class="item bg-white drop-shadow-xl py-4 px-4 w-[400px] h-[400px] rounded-lg">
+                <input type="hidden" name="" id="product_id" value="5">
+                <div class="bg-gray-300 w-auto h-[250px] rounded-md mb-4">
+                    <img class="w-full h-full" src="./images/cow.jpg" id="image">
+
+                </div>
+                <h4 class="text-2xl mt-2" id="product_name">Cow</h4>
+                <span class="text-gray-500 text-xs">BUY NOW & GET NOW</span>
+
+                <div class="flex justify-between items-center px-2 py-4">
+                    <h4 class="text-2xl font-bold text-[#008080]" id="price">$350</h4>
+                    <ion-icon id="Buy_btn" name="cart-outline" class="bg-[#008080] hover:bg-green-600 transition-all ease-in duration-500 py-2 px-4 rounded-md text-3xl text-white cursor-pointer"></ion-icon>
+                </div>
+
+            </div>
+
+
+
+
+            <!-- //product 6 -->
+
+            <div class="item bg-white drop-shadow-xl py-4 px-4 w-[400px] h-[400px] rounded-lg">
+                <input type="hidden" name="" id="product_id" value="6">
+                <div class="bg-gray-300 w-auto h-[250px] rounded-md mb-4">
+                    <img class="w-full h-full" src="./images/hen.jpg" id="image">
+
+                </div>
+                <h4 class="text-2xl mt-2" id="product_name">Hen</h4>
+                <span class="text-gray-500 text-xs">BUY NOW & GET NOW</span>
+
+                <div class="flex justify-between items-center px-2 py-4">
+                    <h4 class="text-2xl font-bold text-[#008080]" id="price">$10</h4>
+                    <ion-icon id="Buy_btn" name="cart-outline" class="bg-[#008080] hover:bg-green-600 transition-all ease-in duration-500 py-2 px-4 rounded-md text-3xl text-white cursor-pointer"></ion-icon>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="mx-auto float-right">
+        <button class="bg-[#008080] text-[#fff] cursor-pointer text-xl py-2 px-6 rounded   mx-4"> <a href="#header" title="Look Your Items"><ion-icon name="chevron-up-circle-outline" class="text-4xl"></ion-icon></a></button>
+        <button class="bg-[#008080] text-[#fff] cursor-pointer text-xl py-2 px-6 rounded   mx-4"> <a href="items.html" target="_blank" title="Upload new item"><ion-icon name="cloud-upload-outline" class="text-4xl"></ion-icon></a></button>
+    </div>
+
+
+    <!-- //part 3 foter -->
+
+
+    <footer class="w-full  min-h-full py-8 px-10 mt-[50px]">
+
+        <div class="my-16">
+            <h1 class="text-center text-3xl font-[poppins] font-bold ">CONTACT US HERE</h1>
+            <hr class="w-[20%] h-2 bg-white shadow-md m-auto ">
+        </div>
+
+        <div class="bg-[#008080] py-4 px-5  m-auto w-[80%] rounded-md md:flex  md:justify-between md:items-center">
+            <div class="text-white md:text-xl text-center">
+                <p>© 2023 Jana-Gale Online Marketing. All rights reserved.</p>
+            </div>
+
+
+            <div class=" text-center    text-white text-3xl mt-5">
+                <ion-icon class="mx-4 hover:text-orange-500 duration-500" name="logo-facebook"></ion-icon>
+                <ion-icon class="mx-4 hover:text-orange-500 duration-500" name="logo-instagram"></ion-icon>
+                <ion-icon class="mx-4 hover:text-orange-500 duration-500" name="logo-whatsapp"></ion-icon>
+                <ion-icon class="mx-4 hover:text-orange-500 duration-500" name="logo-github"></ion-icon>
+            </div>
+
+
+        </div>
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+    <script>
+        function Menu(e) {
+            let list = document.querySelector("ul ")
+
+            e.name == "menu" ? (e.name = "close", list.classList.add("top-[80px]")) : (e.name = "menu", list.classList.remove("top-[80px]"))
+
+        }
+    </script>
+
+    <!-- pop up sweeetch -->
+
+    <script src="main.js"></script>
+</body>
+
+</html>

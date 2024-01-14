@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+#H1-PRODUCT {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    background-color: #008080;
+}
+
+.image{
+    width: 80px;
+}
+/* 
+ul li a{
+    font-size: 22px;
+    color: white;
+
+} */
+ul li{
+    margin: 10px 15px;
+}

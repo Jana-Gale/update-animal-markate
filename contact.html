@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- add icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title> ANIMAL MARKETS</title>
+</head>
+
+<body class="bg-[#f5f5f5] font-[Poppins]">
+    <nav class="bg-[#008080] p-5 shadow md:flex md:items-center md:justify-between">
+        <div class="flex items-center justify-between">
+
+            <span class="text-xl font-[poppins] text-white mx-2 cursor-pointer">
+                <img class="h-14 inline" src="./images/cow.png" alt="">
+                ANIMAL MARKETS</span>
+
+            <!-- aadd icon  -->
+            <span class="text-3xl text-white md:hidden block mx-2 cursor-pointer">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+
+
+        <ul class="md:flex md:items-center z-[2] md:z-auto md:static absolute bg-[#008080]
+         left-0 w-full md:w-auto md:py-0 py-4 md:pl-0 pl-7 top-[-400px] duration-500 transition-all ease-in text-center">
+
+
+
+
+            <li class="mx-8 md:my-0 my-6"><a href="index.html" class="text-white text-xl font-[poppins] hover:text-gray-200 duration-500">HOME</a></li>
+            <li class="mx-8 md:my-0 my-6"><a href="./about.html" class="text-white text-xl font-[poppins] hover:text-gray-200 duration-500">ABOUT</a></li>
+            <li class="mx-8 md:my-0 my-6"><a href="service.html" class="text-white text-xl font-[poppins] hover:text-gray-200 duration-500">SERVICES</a></li>
+            <li class="mx-8 md:my-0 my-6"><a href="#" class="text-white text-xl font-[poppins] hover:text-gray-200 duration-500">CONTACT</a></li>
+
+            <!-- //loging button -->
+            <button class=" mx-8 font-sans  text-cyan-800 bg-white px-6 py-2 rounded-full hover:bg-gray-600 hover:text-white duration-500">Sign Up</button>
+        </ul>
+    </nav>
+
+    <!-- //header section -->
+    <header class="md:w-[50%] md:m-auto   z-[-1] mx-5 min-h-[80vh] bg-white shadow-md py-10 px-10 md:my-10">
+
+        <div class="my-5">
+            <h1 class="text-center text-3xl font-[poppins] font-bold ">FILL THIS FORM</h1>
+            <hr class="w-[20%] h-2 bg-white shadow-md m-auto ">
+        </div>
+
+        <form class="w-full  ">
+
+            <div class="md:grid grid-cols-2 gap-4">
+                <!-- //part1 input -->
+                <div class="block my-2">
+                    <label for="name" class="text-2xl my-2 font-[poppins]">First name</label>
+                    <input class="w-[100%] py-2 px-2 rounded border-2 border-solid border-[#008080]" type="text" name="" id="name" placeholder="Enter first name..." required>
+                </div>
+
+                <!-- //part2 input -->
+                <div class="block my-2">
+                    <label for="name" class="text-2xl my-2 font-[poppins]">Last name</label>
+                    <input class="w-[100%] py-2 px-2 rounded border-2 border-solid border-[#008080]" type="text" name="" id="name" placeholder="Enter last name..." required>
+                </div>
+
+
+                <!-- //part3 input -->
+                <div class="block my-2">
+                    <label for="name" class="text-2xl my-2 font-[poppins]">Email</label>
+                    <input class="w-[100%] py-2 px-2 rounded border-2 border-solid border-[#008080]" type="email" name="" id="name" placeholder="Enter email address..." required>
+                </div>
+
+                <!-- //part4 input -->
+                <div class="block my-2">
+                    <label for="name" class="text-2xl my-2 font-[poppins]">Password</label>
+                    <input class="w-[100%] py-2 px-2 rounded border-2 border-solid border-[#008080]" type="password" name="" id="name" placeholder="Enter password..." required>
+                </div>
+            </div>
+
+
+            <!-- //part5 input -->
+            <div class="block my-2  md:grid grid-cols-1 gap-4">
+                <label for="name" class="text-2xl my-1 font-[poppins]">Message</label>
+                <textarea class="w-[100%] rounded px-3 border-2 border-solid border-[#008080]" name="" id="" cols="5" rows="3" placeholder="Leave Message...."></textarea>
+            </div>
+
+            <button type="submit" class="bg-[#008080] text-white px-4 py-2 rounded-md float-right my-2 hover:bg-sky-950 duration-500">Submit</button>
+
+        </form>
+    </header>
+
+
+
+
+
+
+
+    <!-- //part 3 foter -->
+
+    <footer class="w-full  min-h-full py-8 px-10 mt-[50px]">
+
+        <div class="my-16">
+            <h1 class="text-center text-3xl font-[poppins] font-bold ">CONTACT US HERE</h1>
+            <hr class="w-[20%] h-2 bg-white shadow-md m-auto ">
+        </div>
+
+        <div class="bg-[#008080] py-4 px-5  m-auto w-[80%] rounded-md md:flex  md:justify-between md:items-center">
+            <div class="text-white md:text-xl text-center">
+                <p>© 2023 Jana-Gale Online Marketing. All rights reserved.</p>
+            </div>
+
+
+            <div class=" text-center    text-white text-3xl mt-5">
+                <ion-icon class="mx-4 hover:text-orange-500 duration-500" name="logo-facebook"></ion-icon>
+                <ion-icon class="mx-4 hover:text-orange-500 duration-500" name="logo-instagram"></ion-icon>
+                <ion-icon class="mx-4 hover:text-orange-500 duration-500" name="logo-whatsapp"></ion-icon>
+                <ion-icon class="mx-4 hover:text-orange-500 duration-500" name="logo-github"></ion-icon>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script>
+        function Menu(e) {
+            let list = document.querySelector("ul")
+
+            e.name == "menu" ? (e.name = "close", list.classList.add("top-[80px]")) : (e.name = "menu", list.classList.remove("top-[80px]"))
+
+        }
+    </script>
+</body>
+
+</html>

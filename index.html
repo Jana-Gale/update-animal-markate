@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- add icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title> ANIMAL MARKETS</title>
+</head>
+
+<body class="bg-[#f5f5f5] font-[Poppins]">
+    <nav class="bg-[#008080] p-5 shadow md:flex md:items-center md:justify-between">
+        <div class="flex items-center justify-between">
+
+            <span class="text-xl font-[poppins] text-white mx-2 cursor-pointer">
+                <img class="h-14 inline" src="./images/cow.png" alt="">
+                ANIMAL MARKETS</span>
+
+            <!-- aadd icon  -->
+            <span class="text-3xl text-white md:hidden block mx-2 cursor-pointer">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+
+
+        <ul class="md:flex md:items-center z-[2] md:z-auto md:static absolute bg-[#008080]
+         left-0 w-full md:w-auto md:py-0 py-4 md:pl-0 pl-7 top-[-400px] duration-500 transition-all ease-in text-center">
+
+
+
+
+            <li class="mx-8 md:my-0 my-6"><a href="#" class="text-white text-xl font-[poppins] hover:text-gray-200 duration-500">HOME</a></li>
+            <li class="mx-8 md:my-0 my-6"><a href="./about.html" class="text-white text-xl font-[poppins] hover:text-gray-200 duration-500">ABOUT</a></li>
+            <li class="mx-8 md:my-0 my-6"><a href="service.html" class="text-white text-xl font-[poppins] hover:text-gray-200 duration-500">SERVICES</a></li>
+            <li class="mx-8 md:my-0 my-6"><a href="contact.html" class="text-white text-xl font-[poppins] hover:text-gray-200 duration-500">CONTACT</a></li>
+
+            <!-- //loging button -->
+            <button class=" mx-8 font-sans  text-cyan-800 bg-white px-6 py-2 rounded-full hover:bg-gray-600 hover:text-white duration-500">Sign Up</button>
+        </ul>
+    </nav>
+
+    <!-- //header section -->
+    <header class="md:w-auto z-[-1] mx-5 min-h-[80vh] bg-white shadow-md py-10 px-10">
+        <div class="md:flex md:justify-between md:items-center">
+            <!-- //all text -->
+            <div class="my-10 relative ">
+                <h1 class="md:text-3xl text-2xl block md:leading-normal pb-8">WELCOME OUR DEAR CUSTOMERS IN <br><span class="text-2xl text-[#008080] font-bold md:mx-4 md:text-3xl"> MARKATING ANIMALS ONLINE!</span></h1>
+
+
+
+                <p class="text-1xl text-gray-500 font-serif leading-loose text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem porro doloremque pariatur nihil ab tempora? <br> Molestias commodi non voluptas odio! ipsum dolor sit amet consectetur adipisicing elit. Eum labore eius doloremque ab culpa
+                    <br> at quae similique provident deleniti eveniet, voluptatum velit. Distinctio alias totam unde hic consectetur eligendi expedita.
+                    <br> Molestias commodi non voluptas odio! ipsum dolor sit amet consectetur adipisicing elit. Eum labore eius doloremque ab culpa
+                    <br> at quae similique provident deleniti eveniet, voluptatum velit. Distinctio alias totam unde hic consectetur eligendi expedita.
+                </p>
+
+                <div class="my-[50px] flex items-center ">
+                    <button class="bg-[#008080] text-white px-6 py-2 rounded-full text-xl hover:bg-sky-950 duration-500"><a href="service.html">Buy Now</a></button>
+
+                    <button class="border-solid border-2 border-black text-black px-6 py-2 rounded-full text-xl hover:bg-[#008080] hover:border-none hover:text-white duration-500 mx-5"><a href="about.html">Abou us</a></button>
+
+                </div>
+            </div>
+
+            <!-- //image adding -->
+            <div class="md:absolute right-3 top-[108px]">
+                <img class="h-[600px]" src="./images/man head.png" alt="">
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+
+    <!-- //part 2 main -->
+    <main class="w-full bg-white min-h-full py-8 px-10 my-[50px]">
+        <div class="my-16">
+            <h1 class="text-center text-3xl font-[poppins] font-bold ">OUR PRODUTS</h1>
+            <hr class="w-[20%] h-2 bg-white shadow-md m-auto ">
+        </div>
+        <!-- products -->
+        <div class="products md:grid grid-cols-3 gap-4 space-y-4 items-center">
+
+            <!-- //products 1 -->
+            <div class="item bg-white drop-shadow-xl py-4 px-4 w-[400px] h-[400px] rounded-lg">
+                <div class="bg-gray-300 w-auto h-[250px] rounded-md mb-4">
+                    <img class="w-full h-full" src="./images/goat.jpg" alt="">
+
+                </div>
+                <h4 class="text-2xl mt-2">GOAT</h4>
+                <span class="text-gray-500 text-xs">BUY NOW & GET NOW</span>
+
+                <div class="flex justify-between items-center px-2 py-4">
+                    <h4 class="text-2xl font-bold text-[#008080]">$2.99</h4>
+                    <ion-icon name="cart-outline" class="bg-[#008080] py-2 px-4 rounded-md text-3xl text-white cursor-pointer"></ion-icon>
+                </div>
+
+            </div>
+            <!-- //product 2 -->
+            <div class="item bg-white drop-shadow-xl py-4 px-4 w-[400px] h-[400px] rounded-lg">
+                <div class="bg-gray-300 w-auto h-[250px] rounded-md mb-4">
+                    <img class="w-full h-full" src="./images/horse.jpeg" alt="">
+
+                </div>
+                <h4 class="text-2xl mt-2">Horse</h4>
+                <span class="text-gray-500 text-xs">BUY NOW & GET NOW</span>
+
+                <div class="flex justify-between items-center px-2 py-4">
+                    <h4 class="text-2xl font-bold text-[#008080]">$39.9</h4>
+                    <ion-icon name="cart-outline" class="bg-[#008080] py-2 px-4 rounded-md text-3xl text-white cursor-pointer"></ion-icon>
+                </div>
+
+            </div>
+
+            <!-- //product 3 -->
+            <div class="item bg-white drop-shadow-xl py-4 px-4 w-[400px] h-[400px] rounded-lg">
+                <div class="bg-gray-300 w-auto h-[250px] rounded-md mb-4">
+                    <img class="w-full h-full" src="./images/camel.jpg" alt="">
+
+                </div>
+                <h4 class="text-2xl mt-2">Camel</h4>
+                <span class="text-gray-500 text-xs">BUY NOW & GET NOW</span>
+
+                <div class="flex justify-between items-center px-2 py-4">
+                    <h4 class="text-2xl font-bold text-[#008080]">$44.99</h4>
+                    <ion-icon name="cart-outline" class="bg-[#008080] py-2 px-4 rounded-md text-3xl text-white cursor-pointer"></ion-icon>
+                </div>
+
+            </div>
+
+
+            <!-- //product 4 -->
+            <div class="item bg-white drop-shadow-xl py-4 px-4 w-[400px] h-[400px] rounded-lg">
+                <div class="bg-gray-300 w-auto h-[250px] rounded-md mb-4">
+                    <img class="w-full h-full" src="./images/donkey.jpeg" alt="">
+
+                </div>
+                <h4 class="text-2xl mt-2">Donkey</h4>
+                <span class="text-gray-500 text-xs">BUY NOW & GET NOW</span>
+
+                <div class="flex justify-between items-center px-2 py-4">
+                    <h4 class="text-2xl font-bold text-[#008080]">$13.99</h4>
+                    <ion-icon name="cart-outline" class="bg-[#008080] py-2 px-4 rounded-md text-3xl text-white cursor-pointer"></ion-icon>
+                </div>
+
+            </div>
+
+
+            <!-- //product 5 -->
+            <div class="item bg-white drop-shadow-xl py-4 px-4 w-[400px] h-[400px] rounded-lg">
+                <div class="bg-gray-300 w-auto h-[250px] rounded-md mb-4">
+                    <img class="w-full h-full" src="./images/goat &child.jpg" alt="">
+
+                </div>
+                <h4 class="text-2xl mt-2">Goat & child</h4>
+                <span class="text-gray-500 text-xs">BUY NOW & GET NOW</span>
+
+                <div class="flex justify-between items-center px-2 py-4">
+                    <h4 class="text-2xl font-bold text-[#008080]">$13.99</h4>
+                    <ion-icon name="cart-outline" class="bg-[#008080] py-2 px-4 rounded-md text-3xl text-white cursor-pointer"></ion-icon>
+                </div>
+
+            </div>
+
+
+
+            <!-- //product 6 -->
+            <div class="item bg-white drop-shadow-xl py-4 px-4 w-[400px] h-[400px] rounded-lg">
+                <div class="bg-gray-300 w-auto h-[250px] rounded-md mb-4">
+                    <img class="w-full h-full" src="./images/cow.jpg" alt="">
+
+                </div>
+                <h4 class="text-2xl mt-2">Cow</h4>
+                <span class="text-gray-500 text-xs">BUY NOW & GET NOW</span>
+
+                <div class="flex justify-between items-center px-2 py-4">
+                    <h4 class="text-2xl font-bold text-[#008080]">$43.99</h4>
+                    <ion-icon name="cart-outline" class="bg-[#008080] py-2 px-4 rounded-md text-3xl text-white cursor-pointer"></ion-icon>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </main>
+
+
+    <!-- //part 3 foter -->
+
+    <footer class="w-full  min-h-full py-8 px-10 mt-[50px]">
+
+        <div class="my-16">
+            <h1 class="text-center text-3xl font-[poppins] font-bold ">CONTACT US HERE</h1>
+            <hr class="w-[20%] h-2 bg-white shadow-md m-auto ">
+        </div>
+
+        <div class="bg-[#008080] py-4 px-5  m-auto w-[80%] rounded-md md:flex  md:justify-between md:items-center">
+            <div class="text-white md:text-xl text-center">
+                <p>© 2023 Jana-Gale Online Marketing. All rights reserved.</p>
+            </div>
+
+
+            <div class=" text-center    text-white text-3xl mt-5">
+                <ion-icon class="mx-4 hover:text-orange-500 duration-500" name="logo-facebook"></ion-icon>
+                <ion-icon class="mx-4 hover:text-orange-500 duration-500" name="logo-instagram"></ion-icon>
+                <ion-icon class="mx-4 hover:text-orange-500 duration-500" name="logo-whatsapp"></ion-icon>
+                <ion-icon class="mx-4 hover:text-orange-500 duration-500" name="logo-github"></ion-icon>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script>
+        function Menu(e) {
+            let list = document.querySelector("ul")
+
+            e.name == "menu" ? (e.name = "close", list.classList.add("top-[80px]")) : (e.name = "menu", list.classList.remove("top-[80px]"))
+
+        }
+    </script>
+</body>
+
+</html>
