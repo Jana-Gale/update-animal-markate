@@ -1,6 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 #H1-PRODUCT {
     font-family: 'Roboto', sans-serif;
+}
+
+#header3{
+    width: 100%;
+    margin: auto;
 }
 
 nav{
@@ -18,4 +30,30 @@ ul li a{
 } */
 ul li{
     margin: 10px 15px;
+}
+
+.form-group.error input{
+    border: red 2px solid;
+}
+
+.form-group.success input{
+    border: rgb(5, 251, 5) 2px solid;
+}
+
+
+
+.form-group small{
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 5px 0px auto;
+    color: red;
+    visibility: hidden;
+}
+
+.form-group.small_display small{
+    visibility: visible;
+}
+
+#tick_submit{
+    visibility: hidden;
 }

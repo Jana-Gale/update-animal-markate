@@ -33,13 +33,20 @@ Buy_btns.forEach((Buy_btn) => {
 
 
         //know if user wants to buy someting.
-        let message = confirm('Do you want to buy this item.')
+        let message =confirm('Do you want to buy this item.')
+       
+      
+
+
         console.log(message);
+       
 
 
 
         if (message) {
 
+
+           
 
             let parant_Elent = Buy_btn.parentElement;
             //gran ParantElemt the DIV of each btn
@@ -61,14 +68,20 @@ Buy_btns.forEach((Buy_btn) => {
 
             if (!isIntheCart) { //if length <<1
 
-
+                swal({
+                    title: "Good job!",
+                    text: `You have purchased a: ${all_items.product_name}!`,
+                    icon: "success",
+                    button: "Aww yiss!",
+                  });
 
                 AddItemsTotheCart(all_items)
 
 
 
             } else {
-                alert("You have already purchased this item.")
+                // alert("You have already purchased this item.")
+                swal(`You have already purchased this:  ${all_items.product_name}.!`);
                 return
             }
 
@@ -99,6 +112,10 @@ Buy_btns.forEach((Buy_btn) => {
             console.log(save_cart_items.length);
 
 
+        }
+        // hadii uu cansel taabto user ka
+        else{
+            swal("Sorry!", "You have not purchase any item!");
         }
 
     })
